@@ -42,16 +42,16 @@ void insereAluno() {
     gets(matricula);
     fflush(stdin);
     int i=0;
-    // ENCONTRANDO A PR”XIMA POSI«√O DO VETOR DE ALUNOS VAZIA PARA INCLUIR NELA O NOVO ALUNO
+    // ENCONTRANDO A PR√ìXIMA POSI√á√ÉO DO VETOR DE ALUNOS VAZIA PARA INCLUIR NELA O NOVO ALUNO
     while(strcmp(lista[i].matricula, "") != 0)
     {
         i++;
     }
-    // VERIFICANDO SE A MATRICULA INFORMADA J¡ EXISTE. SE EXISTIR, N√O PODER¡ SER USADA
+    // VERIFICANDO SE A MATRICULA INFORMADA J√Å EXISTE. SE EXISTIR, N√ÉO PODER√Å SER USADA
     int MatriculaAchada = 0;
     for(int j=0;j<i;j++)
     {
-    	if(lista[i].Del == 0) // APENAS REGISTROS N√O DELETADOS SER√O CONSULTADOS
+    	if(lista[i].Del == 0) // APENAS REGISTROS N√ÉO DELETADOS SER√ÉO CONSULTADOS
     	{		
 	        if (strcmp(lista[j].matricula, matricula) == 0) 
 			{
@@ -71,7 +71,7 @@ void insereAluno() {
         gets(lista[i].sexo);
         fflush(stdin);
         
-        // VERIFICANDO SE O ID_CURSO EXISTE NO VETOR DE CURSOS. SE N√O EXISTIR, O CADASTRO N√O SER¡ CONTINUADO
+        // VERIFICANDO SE O ID_CURSO EXISTE NO VETOR DE CURSOS. SE N√ÉO EXISTIR, O CADASTRO N√ÉO SER√Å CONTINUADO
         fflush(stdin);
         int cursoAchado = 0;
         
@@ -106,12 +106,12 @@ void alteraAluno() {
     gets(matricula);
     fflush(stdin);
    
-   // VERIFICANDO SE A MATRICULA INFORMADA J¡ EXISTE. S” PODE SER ALTERADO, UM ALUNO COM MATRICULA J¡ CADASTRADA
+   // VERIFICANDO SE A MATRICULA INFORMADA J√Å EXISTE. S√ì PODE SER ALTERADO, UM ALUNO COM MATRICULA J√Å CADASTRADA
     int MatriculaAchada = 0;
     int i=0;
     for(;i<TAM && strcmp(lista[i].matricula, "") != 0;i++)
     {
-    	if(lista[i].Del == 0) // APENAS REGISTROS N√O DELETADOS SER√O CONSULTADOS
+    	if(lista[i].Del == 0) // APENAS REGISTROS N√ÉO DELETADOS SER√ÉO CONSULTADOS
     	{
 	        if (strcmp(lista[i].matricula, matricula) == 0) 
 			{
@@ -130,7 +130,7 @@ void alteraAluno() {
         gets(lista[i].sexo);
         fflush(stdin);
         
-        // VERIFICANDO SE A MATRICULA INFORMADA J¡ EXISTE. S” PODE SER ALTERADO, UM ALUNO COM MATRICULA J¡ CADASTRADA
+        // VERIFICANDO SE A MATRICULA INFORMADA J√Å EXISTE. S√ì PODE SER ALTERADO, UM ALUNO COM MATRICULA J√Å CADASTRADA
 	    fflush(stdin);
         int cursoAchado = 0;
         
@@ -173,7 +173,7 @@ void exibeAlunos() {
     int i=0;
     
     while(strcmp(lista[i].matricula,"") != 0 && i < TAM) {
-    	if(lista[i].Del == 0) // APENAS REGISTROS N√O DELETADOS IR√O APARECER
+    	if(lista[i].Del == 0) // APENAS REGISTROS N√ÉO DELETADOS IR√ÉO APARECER
     	{		
 	        printf("-----------------------------------\n");
 			printf("MATRICULA: %s\n", lista[i].matricula);
@@ -193,12 +193,12 @@ void remove ()
     gets(matricula);
     fflush(stdin);
    
-   // VERIFICANDO SE A MATRICULA INFORMADA J¡ EXISTE. S” PODE SER ALTERADO, UM ALUNO COM MATRICULA J¡ CADASTRADA
+   // VERIFICANDO SE A MATRICULA INFORMADA J√Å EXISTE. S√ì PODE SER ALTERADO, UM ALUNO COM MATRICULA J√Å CADASTRADA
     int MatriculaAchada = 0;
     int i=0;
     for(;i<TAM && strcmp(lista[i].matricula, "") != 0;i++)
     {
-    	if(lista[i].Del == 0) // APENAS REGISTROS N√O DELETADOS SER√O CONSULTADOS
+    	if(lista[i].Del == 0) // APENAS REGISTROS N√ÉO DELETADOS SER√ÉO CONSULTADOS
     	{
 	        if (strcmp(lista[i].matricula, matricula) == 0) 
 			{
