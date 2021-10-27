@@ -5,34 +5,32 @@
 
 using namespace std;
 #define TAM 1000
-    struct Aluno{
-    char matricula[15];
-    char nome[60];
+	struct Aluno{
+    	char matricula[15];
+    	char nome[60];
 	char sexo[10];
-    int ID_Curso;
-    int idade;
-    int Del;
+    	int ID_Curso;
+	int idade;
+	int Del;
 } lista[TAM];
 
 #define CRS 1000
-struct Curso{
+struct Curso {
 	int ID;
 	char nome;	
 } cursos [CRS];
 
 /*----------------------------------------------------------------------------------------------------*/
 
-void inicializaLista() 
-{
+void inicializaLista() {
     int i;
-    for (i = 0; i < TAM; i++) 
-	{
-        strcpy(lista[i].matricula,"");
-        strcpy(lista[i].nome,"");
-        lista[i].ID_Curso = 0;
-        strcpy(lista[i].sexo,"");    
-        lista[i].idade = 0;
-        lista[i].Del = 0;
+	for (i = 0; i < TAM; i++) {
+		strcpy(lista[i].matricula,"");
+		strcpy(lista[i].nome,"");
+		lista[i].ID_Curso = 0;
+		strcpy(lista[i].sexo,"");    
+		lista[i].idade = 0;
+		lista[i].Del = 0;
 	}
 }
 
